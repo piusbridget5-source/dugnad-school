@@ -14,6 +14,8 @@ a{color:var(--green)}
 
 .top{position:sticky;top:0;z-index:10;display:flex;align-items:center;justify-content:space-between;padding:10px 4%;background:var(--chalk);border-bottom:1px solid var(--line)}
 .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font:800 1.15rem "Bricolage Grotesque",sans-serif}
+.header-actions{display:flex;align-items:center;gap:12px}
+.top-badge{display:inline-flex;align-items:center;justify-content:center;padding:8px 14px;border-radius:999px;background:var(--sun);color:var(--ink);font:700 .78rem/1 "Source Sans 3",sans-serif;letter-spacing:.04em;text-transform:uppercase}
 .menu-btn{display:none;font:inherit;font-weight:600;padding:8px 14px;border:2px solid var(--green);background:none;color:var(--green);border-radius:99px}
 nav{display:flex;align-items:center;gap:22px}
 nav a{text-decoration:none;color:var(--ink);font-weight:600}
@@ -91,6 +93,7 @@ footer{background:var(--ink);color:#d9e3dc;padding:26px 0}
   .steps{grid-template-columns:repeat(4,1fr)}
 }
 @media(max-width:799px){
+  .header-actions{margin-left:auto}
   .menu-btn{display:block}
   nav{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:flex-start;gap:14px;padding:18px 4%;background:var(--chalk);border-bottom:1px solid var(--line)}
   nav.open{display:flex}
